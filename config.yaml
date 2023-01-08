@@ -1,0 +1,330 @@
+baseURL: "https://hugo-profile.netlify.app"
+languageCode: "en-us"
+title: "My Personal Website"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+    
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
+    - identifier: gallery
+      name: Gallery
+      title: Blog posts
+      url: /gallery
+      weight: 2
+ # Dropdown menu:
+  #   - identifier: dropdown
+  #     title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "My profile"
+  description: Text about my cool site
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/flower.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+     defaultTheme: "dark" # light
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: middle # default: left
+
+  # color preference
+  color:
+     textColor: F8E778
+     secondaryTextColor: F8E778
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+     darkmode:
+       textColor: white
+       secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    brandName: "My profile" # Brand name for the brand | default is the title variable
+    disableSearch: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: true
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Tianyue."
+    subtitle: "Nice to meet you."
+    content: "I am currently first year computer science student in the University of Waterloo. Passionate about learning, thinking, and living ."
+    image: /flower.png
+    #/images/hero.svg
+    button:
+      enable: true
+      name: "Resume"
+      url: "#"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://example.com
+        - icon: fab fa-discord
+          url: https://example.com
+        - icon: fab fa-instagram
+          url: https://example.com
+        - icon: fab fa-linkedin
+          url: https://example.com
+  customIcons:
+      
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/myphoto.JPG"
+    content: |-
+      I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA.
+
+      I am currently working on a project that will be used to help people find the best way to get around the city.
+    skills:
+      enable: true
+      title: "Here are a few skills that I have been working on:"
+      items:
+        - "HTML"
+        - "CSS"
+        - "JavaScript"
+        - "React"
+        - "Node"
+        - "Python"
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Senior Software Developer"
+        company: "Facebook"
+        companyUrl: "https://example.com"
+        date: "Jan 2022 - present"
+        featuredLink:
+          enable: true
+          name: "View the project"
+          url: "https://example.com"
+        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+
+      - job: "Software Developer"
+        company: "Amazon"
+        companyUrl: "https://example.com"
+        date: "Sep 2020 - Dec 2021"
+        featuredLink:
+          enable: true
+          url: "https://example.com"
+        info:
+          enable: true
+          content: I worked as a software developer for more than one year in Amazon.
+        content: |
+          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+
+          - Lead backend developer for a product.
+          - Created a frontend design for a product.
+
+      - job: "Junior Software Developer"
+        company: "Apple"
+        companyUrl: "https://example.com"
+        date: "Jan 2020 - Aug 2020"
+        info:
+          enable: false
+        featuredLink:
+          enable: true
+          url: "https://example.com"
+        content: |
+          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+
+          - Lead backend developer for a product.
+          - Created a frontend design for a product.
+
+      - job: "UI/UX Designer"
+        company: "Netflix"
+        companyUrl: "https://example.com"
+        date: "June 2017 - Nov 2019"
+        featuredLink:
+          enable: true
+          url: "https://example.com"
+        content: |
+          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+
+          - Lead backend developer for a product.
+          - Created a frontend design for a product.
+
+      - job: "Product Designer"
+        company: "Google"
+        companyUrl: "https://example.com"
+        date: "Feb 2016 - Mar 2017"
+        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+
+  # Education
+  education:
+    enable: true
+    title: "Education and Awards"
+    index: false
+    items:
+      - title: "Bachelor of Computer Science (completing)"
+        school:
+          name: "University of Waterloo"
+          url: "https://uwaterloo.ca/"
+        date: "2022 - 2027"
+        content: |-
+          - $25,000 Faculty of Mathematics Entrance Scholarship and $2,000 President's Scholarship of Distinctoin awarded
+      #  GPA: "3.9 out of 5.0"
+      
+      - title: "High School (OSSD & IB Diploma)"
+        school:
+          name: "St.John's-Kilmarnock School"
+          url: "https://gobeyond.sjkschool.org/"
+        date: "2016-2019"
+        GPA: "98.2/100  IB grade:  HL math:7/7   HL physics: 7/7   HL chemistry: 7/7 "
+        content: |-
+          - Euclid, CSMC, CEMC, Cayley Math Contests: Honor Roll (top 2% in Canada) & School Winner
+          - Avogadro Chem Contest Top100 in Canada & School Winner
+          - Award of Academic Excellence and several subject awards
+          - Extracurriculars: Women in STEM Club vice president, New Year Celebration main organizer, International Student Conference student representative, etc.
+                
+            
+
+
+  # projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Hugo Profile
+        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
+        image: /images/projects/profile.png
+        featured:
+          name: Demo
+          link: https://hugo-profile.netlify.app
+        badges:
+          - "Hugo"
+          - "Bootstrap"
+          - "Javascript"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/hugo-profile
+          - icon: fab fa-twitter
+            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+
+      - title: Image Converter
+        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
+        image: /images/projects/converter.jpg
+        featured:
+          name: Demo
+          link: https://django-converter.herokuapp.com
+        badges:
+          - "Django"
+          - "Bootstrap"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/converter
+
+      - title: Hugo Profile V2
+        content: A clean and simple Hugo template for personal portfolio and blog.
+        image: /images/projects/profile2.jpg
+        featured:
+          name: Demo V2
+          link: https://hugo-profile-2.netlify.app
+        badges:
+          - "Hugo"
+          - "Bootstrap"
+          - "Javascript"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/HugoProfileV2
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: Whenever having a question or just saying Hi, feel free to reach out to me!
+    email: t5lyu@uwaterloo.ca
+    btnName: Chat now
+
+  footer:
+    More about me:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com
+      linkedin: https://linkedin.com
+      instagram: https://instagram.com
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
