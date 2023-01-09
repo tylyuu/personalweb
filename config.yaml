@@ -118,7 +118,7 @@ params:
     intro: "Hi, my name is"
     title: "Tianyue."
     subtitle: "Nice to meet you."
-    content: "I am currently first year computer science student in the University of Waterloo. Passionate about learning, thinking, and living ."
+    content: "I am currently a first year computer science student in the University of Waterloo. Passionate about learning, thinking, and living ."
     image: /flower.png
     #/images/hero.svg
     button:
