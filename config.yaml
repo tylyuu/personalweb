@@ -1,6 +1,6 @@
 baseURL: "https://hugo-profile.netlify.app"
 languageCode: "en-us"
-title: "My Personal Website"
+title: "Tianyuelyu"
 theme: hugo-profile
 
 outputs:
@@ -73,7 +73,7 @@ params:
 
   theme:
     # disableThemeToggle: true
-     defaultTheme: "dark" # light
+     defaultTheme: "light" # dark
 
   font:
     fontSize: 1rem # default: 1rem
@@ -118,8 +118,8 @@ params:
     intro: "Hi, my name is"
     title: "Tianyue."
     subtitle: "Nice to meet you."
-    content: "I am currently a first year computer science student in the University of Waterloo. Passionate about learning, thinking, and living ."
-    image: /flower.png
+    content: "Currently first year cs at Uwaterloo."
+    image: /flower.jpg
     #/images/hero.svg
     button:
       enable: true
@@ -130,13 +130,13 @@ params:
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
-          url: https://example.com
+          url: https://github.com/tylyuu
         - icon: fab fa-discord
-          url: https://example.com
+          url: discordapp.com/users/1017868616705781790
         - icon: fab fa-instagram
-          url: https://example.com
+          url: https://www.instagram.com/tylyuu_/
         - icon: fab fa-linkedin
-          url: https://example.com
+          url: https://www.linkedin.com/in/tianyue-lyu-a0548023a/
   customIcons:
       
 
@@ -146,19 +146,20 @@ params:
     title: "About Me"
     image: "/myphoto.JPG"
     content: |-
-      I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA.
-
-      I am currently working on a project that will be used to help people find the best way to get around the city.
+      I am currently living in Waterloo, ON. I love cooking, cycling, playing Ukelele, and have a cute little dog. Learn more about me in my gallery!
+      
+      
     skills:
       enable: true
-      title: "Here are a few skills that I have been working on:"
+      title: "I am interested in web development and here are a few skills that I have been working on:"
       items:
         - "HTML"
         - "CSS"
         - "JavaScript"
         - "React"
-        - "Node"
+        - "C"
         - "Python"
+        - "Racket"
 
   # Experience
   experience:
@@ -228,7 +229,7 @@ params:
   # Education
   education:
     enable: true
-    title: "Education and Awards"
+    title: "Education"
     index: false
     items:
       - title: "Bachelor of Computer Science (completing)"
@@ -237,7 +238,7 @@ params:
           url: "https://uwaterloo.ca/"
         date: "2022 - 2027"
         content: |-
-          - $25,000 Faculty of Mathematics Entrance Scholarship and $2,000 President's Scholarship of Distinctoin awarded
+          - awarded $25,000 Faculty of Mathematics Entrance Scholarship and $2,000 President's Scholarship of Distinctoin
       #  GPA: "3.9 out of 5.0"
       
       - title: "High School (OSSD & IB Diploma)"
@@ -250,7 +251,7 @@ params:
           - Euclid, CSMC, CEMC, Cayley Math Contests: Honor Roll (top 2% in Canada) & School Winner
           - Avogadro Chem Contest Top100 in Canada & School Winner
           - Award of Academic Excellence and several subject awards
-          - Extracurriculars: Women in STEM Club vice president, New Year Celebration main organizer, International Student Conference student representative, etc.
+          - Women in STEM Club vice president
                 
             
 
@@ -260,36 +261,35 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - title: Hugo Profile
-        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
-        image: /images/projects/profile.png
+      - title: Sorting Visualizer
+        content: A dynamic visualization of different sorting algorithms.
+        image: /sort.png
         featured:
           name: Demo
-          link: https://hugo-profile.netlify.app
+          link: https://tylyuu.github.io/sorting-visualizer/
         badges:
-          - "Hugo"
-          - "Bootstrap"
           - "Javascript"
+          - "HTML"
+          - "CSS"
+          - "React"
         links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
-          - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
-
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
+            url: https://github.com/tylyuu/sorting-visualizer
+         
+      - title: Bill Tracker
+        content: A personal tracking of monthly bill, allowing various types of currency and a lot more features.
+        image: /bill.png
         featured:
           name: Demo
-          link: https://django-converter.herokuapp.com
+          link: https://tylyuu.github.io/bill-tracker/
         badges:
-          - "Django"
-          - "Bootstrap"
+          - "Javascript"
+          - "HTML"
+          - "CSS"
+          - "React"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
+            url: https://github.com/tylyuu/bill-tracker
 
       - title: Hugo Profile V2
         content: A clean and simple Hugo template for personal portfolio and blog.
