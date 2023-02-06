@@ -27,7 +27,7 @@ Menus:
     - identifier: blog
       name: Blog
       title: Blog posts
-      url: /blogs
+      url: /posts
       weight: 1
     - identifier: gallery
       name: Gallery
@@ -56,7 +56,7 @@ params:
   title: "My profile"
   description: Text about my cool site
   # staticPath: ""  # The path to serve the static files from
-  favicon: "/flower.png"
+  favicon: "/myphoto.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -146,7 +146,7 @@ params:
     title: "About Me"
     image: "/myphoto.JPG"
     content: |-
-      I am currently living in Waterloo, ON. I love cooking, cycling, playing Ukelele, and have a cute little dog. Learn more about me in my gallery!
+      Currently living in Waterloo, ON. Love cooking, cycling, music, and have a cute little dog. Learn more about me in my gallery!
       
       
     skills:
@@ -163,7 +163,7 @@ params:
 
   # Experience
   experience:
-    enable: true
+    enable: false
     # title: "Custom Name"
     items:
       - job: "Senior Software Developer"
@@ -220,11 +220,7 @@ params:
           - Lead backend developer for a product.
           - Created a frontend design for a product.
 
-      - job: "Product Designer"
-        company: "Google"
-        companyUrl: "https://example.com"
-        date: "Feb 2016 - Mar 2017"
-        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+    
 
   # Education
   education:
@@ -245,11 +241,11 @@ params:
         school:
           name: "St.John's-Kilmarnock School"
           url: "https://gobeyond.sjkschool.org/"
-        date: "2016-2019"
+        date: "2019-2022"
         GPA: "98.2/100  IB grade:  HL math:7/7   HL physics: 7/7   HL chemistry: 7/7 "
         content: |-
-          - Euclid, CSMC, CEMC, Cayley Math Contests: Honor Roll (top 2% in Canada) & School Winner
-          - Avogadro Chem Contest Top100 in Canada & School Winner
+          - Euclid, CSMC, CEMC, Cayley Math Contests: Honor Roll (top 2% in Canada) & School Champion
+          - Avogadro Chem Contest Top100 in Canada & School Champion
           - Award of Academic Excellence and several subject awards
           - Women in STEM Club vice president
                 
@@ -291,19 +287,18 @@ params:
           - icon: fab fa-github
             url: https://github.com/tylyuu/bill-tracker
 
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
+      - title: Smart Weather Forecast
+        content: An interative web app that visualizes weather data at different parts of the world.
+        image: /weather.png
         featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
+          name: Demo
+          link: https://tylyuu-weather-forcast-main-5vp3ew.streamlit.app
         badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
+          - "Python"
+          - "Streamlit"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+            url: https://github.com/tylyuu/weather-forecast
 
   #Contact
   contact:
