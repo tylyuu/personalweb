@@ -22,18 +22,18 @@ markup:
     renderer:
       unsafe: true
 
-Menus:
-  main:
-    - identifier: blog
-      name: Blog
-      title: Blog posts
-      url: /posts
-      weight: 1
-    - identifier: gallery
-      name: Gallery
-      title: Blog posts
-      url: /gallery
-      weight: 2
+#Menus:
+#  main:
+ #   - identifier: blog
+  #    name: Blog
+   #   title: Blog posts
+   #   url: /posts
+    #  weight: 1
+  #  - identifier: gallery
+  #    name: Gallery
+  #    title: Blog posts
+   #   url: /gallery
+    #  weight: 2
  # Dropdown menu:
   #   - identifier: dropdown
   #     title: Example dropdown menu
@@ -115,14 +115,14 @@ params:
   # Hero
   hero:
     enable: true
-    intro: "Hi, my name is"
-    title: "Tianyue."
+    intro:
+    title: "Tianyue Lyu"
     subtitle: "Nice to meet you."
-    content: "Currently first year cs at Uwaterloo."
+    content: "Currently first year CS at Uwaterloo."
     image: /flower.jpg
     #/images/hero.svg
     button:
-      enable: true
+      enable: false
       name: "Resume"
       url: "#"
       download: true
@@ -146,12 +146,13 @@ params:
     title: "About Me"
     image: "/myphoto.JPG"
     content: |-
-      Currently living in Waterloo, ON. Love cooking, cycling, music, and have a cute little dog. Learn more about me in my gallery!
+      Hi! I'm Tianyue, a first-year computer science student at the University of Waterloo. I have a passion for technology, cooking, cycling, music, and spending time with my furry best friend. In my free time, I love experimenting with new recipes and ingredients and try cuisines from different parts of the world. I also love playing ukulele, which would always give me full relax from studying.
+
       
       
     skills:
       enable: true
-      title: "I am interested in web development and here are a few skills that I have been working on:"
+      title: "Here are a few skills that I have been learning and working on:"
       items:
         - "HTML"
         - "CSS"
@@ -234,7 +235,7 @@ params:
           url: "https://uwaterloo.ca/"
         date: "2022 - 2027"
         content: |-
-          - awarded $25,000 Faculty of Mathematics Entrance Scholarship and $2,000 President's Scholarship of Distinctoin
+          - awarded $25,000 Faculty of Mathematics Entrance Scholarship and $2,000 President's Scholarship of Distinction
       #  GPA: "3.9 out of 5.0"
       
       - title: "High School (OSSD & IB Diploma)"
@@ -316,9 +317,11 @@ params:
       enable: true
       disableFeaturedImage: false
     socialNetworks:
-      github: https://github.com
-      linkedin: https://linkedin.com
-      instagram: https://instagram.com
+      github: https://github.com/tylyuu
+      linkedin: https://www.linkedin.com/in/tianyue-lyu-a0548023a/
+      instagram: https://www.instagram.com/tylyuu_/
+      
+            
 
   # List pages like blogs and posts
   listPages:
